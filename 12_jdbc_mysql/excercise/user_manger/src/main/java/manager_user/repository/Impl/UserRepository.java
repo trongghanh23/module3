@@ -1,4 +1,4 @@
-package manager_user.repository.Impl;
+package manager_user.repository.impl;
 
 import manager_user.model.User;
 import manager_user.repository.BaseRepository;

@@ -2,7 +2,7 @@ package manager_user.service.Impl;
 
 import manager_user.model.User;
 import manager_user.repository.IUserRepository;
-import manager_user.repository.Impl.UserRepository;
+import manager_user.repository.impl.UserRepository;
 import manager_user.service.IUserService;
 
 import java.util.List;
