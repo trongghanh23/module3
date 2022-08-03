@@ -1,4 +1,4 @@
-package manager_user.service.Impl;
+package manager_user.service.impl;
 
 import manager_user.model.User;
 import manager_user.repository.IUserRepository;
@@ -7,7 +7,7 @@ import manager_user.service.IUserService;
 
 import java.util.List;
 
-public class UserServiceImpl implements IUserService {
+public class UserService implements IUserService {
     private IUserRepository userRepository = new UserRepository();
 
     @Override
@@ -40,3 +40,5 @@ public class UserServiceImpl implements IUserService {
         return userRepository.sortName();
     }
 }
+
+

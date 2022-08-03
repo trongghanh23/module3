@@ -2,7 +2,8 @@ package manager_user.controller;
 
 import manager_user.model.User;
 import manager_user.service.IUserService;
-import manager_user.service.Impl.UserServiceImpl;
+import manager_user.service.impl.UserService;
+
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -13,7 +14,7 @@ import java.util.List;
 @WebServlet(name = "UserServlet", value = "/users")
 
 public class UserServlet extends HttpServlet {
-    private IUserService userService = new UserServiceImpl();
+    private IUserService userService = new UserService();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

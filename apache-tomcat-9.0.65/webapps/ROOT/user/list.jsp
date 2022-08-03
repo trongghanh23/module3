@@ -11,11 +11,11 @@
 <html>
 <head>
     <title>User Management Application</title>
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
 <center>
     <h1>User Management</h1>
-   
     <table>
         <tr>
             <td>
@@ -36,10 +36,13 @@
 
 
     </table>
+
 </center>
 <div align="center">
     <table border="1" cellpadding="5">
-        <caption><h2>List of Users</h2></caption>
+        <caption> <h2>
+            <a href="users?action=users">List All Users</a>
+        </h2></caption>
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -49,6 +52,7 @@
         </tr>
         <c:forEach var="user" items="${listUser}">
             <tr>
+
                 <td><c:out value="${user.id}"/></td>
                 <td><c:out value="${user.name}"/></td>
                 <td><c:out value="${user.email}"/></td>
@@ -61,5 +65,8 @@
         </c:forEach>
     </table>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js">
+
+</script>
 </body>
 </html>
