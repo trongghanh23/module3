@@ -4,16 +4,72 @@
     <title>$Title$</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"></head>
-<style>
 
-</style>
+
 <body>
-<div class="container-fluid">
-    <div class=" row col-lg-12"style="background: #0dcaf0">
-        <div class="col-lg-3">
-            <img src="https://furamavietnam.com/wp-content/uploads/2018/10/logo.png" class="card-img-top" style="height: 400px;width: 300px" alt="logo">
+<nav class="navbar navbar-expand-lg bg-primary ">
+
+    <div class="container-fluid">
+
+       <img src="https://furamavietnam.com/wp-content/uploads/2018/10/logo.png"style="height: 50px;width: 50px" >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a class="navbar-brand text-light" href="/home.jsp" >Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Employee
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/view/employee/list.jsp">Employee List</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Customer
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/view/customer/list.jsp">Customer List</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Service
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/view/service/add_service.jsp">Add new service</a></li>
+                        <li><a class="dropdown-item" href="/view/service/list_service.jsp">Service List</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contract
+                    </a>
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="/view/contract/list.jsp">Contract List</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-        <div class="col-lg-6">
+    </div>
+</nav>
+
+
+    <div class=" row "style="background: #0dcaf0">
+        <div class="col-lg-9">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -41,80 +97,45 @@
         </div>
 
         <div class="col-lg-3 ">
-            <div class="row-lg-12">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfg_49u85Zh9wB4afnUKK3xqmb64MJvy28N4PDugnxkppCz5Sx4VmeYWYFxd5AIClpY6I&usqp=CAU"style="width: 350px;height: 150px;padding: 5px"  >
+            <div class="row bg-light ">
+                <img src="https://furamavietnam.com/wp-content/uploads/2019/02/Ariyana-Tourism-Complex-02-2.png">
             </div>
-            <div class="row ">
-                <div class="col-lg-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"style="height: 40px;width: 40px ;padding: 5px"></div>
-                <div class="col-lg-10 " ><a href="https://www.facebook.com/furamaresort/" style="color: black">FuramaDaNangResort</a></div></div>
+            <div class="row " style="margin-top: 20px">
+                <div class="col-lg-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"style="height: 40px;width: 40px "></div>
+                <div class="col-lg-10 " ><a href="https://www.facebook.com/furamaresort/" style="color: black; text-decoration: none">FuramaDaNangResort</a></div></div>
 
-            <div class="row">
+            <div class="row" style="margin-top: 20px">
                 <div class="col-lg-2"><img src="https://thumbs.dreamstime.com/b/twitter-logo-bird-isolated-over-white-background-social-media-networking-communications-symbol-breaking-news-130861855.jpg"style="height: 40px;width: 40px ;padding: 5px"></div>
-                <div class="col-lg-10" ><a href="https://www.facebook.com/furamaresort/"style="color: black">FuramaDaNangResort</a></div>
+                <div class="col-lg-10" ><a href="https://www.facebook.com/furamaresort/"style="color: black; text-decoration: none">FuramaDaNangResort</a></div>
             </div>
-            <div class="row">
+            <div class="row" style="margin-top: 20px">
                 <div class="col-lg-2"><img src="https://banner2.cleanpng.com/20180331/yaq/kisspng-logo-telephone-company-yell-calling-5abf775edb9bb5.0259369015224973748995.jpg"style="height: 40px;width: 40px;padding: 5px"></div>
-                <div class="col-lg-10" ><a  href="https://www.facebook.com/furamaresort/"style="color: black">FuramaDaNangResort</a></div>
+                <div class="col-lg-10" ><a  href="https://www.facebook.com/furamaresort/"style="color: black; text-decoration: none">FuramaDaNangResort</a></div>
             </div>
-            <div class="row">
+            <div class="row" style="margin-top: 20px">
                 <div class="col-lg-2"><img src="https://www.e-mailit.com/social-buttons/build/images/solutions/zalo-icon.png"style="height: 40px;width: 40px;padding: 5px"></div>
-                <div class="col-lg-10" ><a  href="https://www.facebook.com/furamaresort/"style="color: black">FuramaDaNangResort</a></div>
+                <div class="col-lg-10" ><a  href="https://www.facebook.com/furamaresort/"style="color: black; text-decoration: none">FuramaDaNangResort</a></div>
             </div>
-             <div class="row">
+             <div class="row" style="margin-top: 20px">
                  <div class="col-lg-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Email_Shiny_Icon.svg/1200px-Email_Shiny_Icon.svg.png"style="height: 40px;width: 40px;padding: 5px"></div>
-                <div class="col-lg-10" ><a  href="https://www.facebook.com/furamaresort/ "style="color: black">FuramaDaNangResort</a></div>
+                <div class="col-lg-10" ><a  href="https://www.facebook.com/furamaresort/ "style="color: black; text-decoration: none">FuramaDaNangResort</a></div>
             </div>
 
         </div>
     </div>
 
 
-        <nav class="navbar navbar-expand-lg bg-primary ">
-            <div class="container-fluid">
-                <a class="navbar-brand text-light" href="/view/service/home.jsp" >Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Employee</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light " href="#">Customer</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Service
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/view/service/add_service.jsp">Add new service</a></li>
-                                <li><a class="dropdown-item" href="/view/service/list_service.jsp">Service List</a></li>
-<%--                                <li><hr class="dropdown-divider"></li>--%>
-<%--                                <li><a class="dropdown-item" href="#">Something else here</a></li>--%>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled text-light">Contract</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
 
 
-    <div class=" row col-lg-12">
+
+    <div class="row">
         <div class="col-lg-6" style=" position: center; text-align: justify;">
           <h1 > ROOMS & SUITES</h1>
             <p>All 198 rooms & suites have polished timber floors, natural fabrics, comfortable cane furniture, plantation style shutters and ceiling fans. Each room also has its own balcony or spacious terrace providing complete privacy and with a superb view of the ocean, the tropical garden or the freshwater swimming lagoon pool.</p>
         </div>
 
         <div class="col-lg-6">
-            <div class="row-lg-12 card">
+            <div class="row card">
                 <img class="card-img-top " src=" https://file4.batdongsan.com.vn/resize/745x510/2021/11/01/20211101150031-e972_wm.jpg"style="height: 300px;width: 800px" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-text">
@@ -124,43 +145,26 @@
         </div>
             <div class="row">
                 <div class="col-lg-6">
-
+                    <div class="row">
                         <img class="card-img-top " src="https://media.sosanhnha.com/batdongsan/2022/07/19/1658195839-picturej4aq2.jpg"style="height: 300px;width: 800px" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">
-                                Decorated with soft colors combined with decorative crafts bearing the breath of local Champa culture, the room is clearly divided into floors. Below is a living area with an L-shaped sofa and above is a bed that feels elegant but very familiar like home.
-
-                                Silk cushions and sumptuous linens and pillows add elegance and charm to the personality of this beautiful room itself.
-
-                                Area: 40.1 m2 connected to the balcony 11.3 m2.
-
+                    </div>
+                        <div class=" row card-body">
+                                Decorated with soft colors combined with decorative crafts bearing the breath of local Champa culture, the room is clearly divided into floors. Below is a living area with an L-shaped sofa and above is a bed that feels elegant but very familiar like home. Silk cushions and sumptuous linens and pillows add elegance and charm to the personality of this beautiful room itself. Area: 40.1 m2 connected to the balcony 11.3 m2.
                         </div>
                         </div>
 
                 <div class="col-lg-6">
-
-                    <img class="card-img-top " src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-M-1047x563.jpg"style="height: 300px;width: 800px" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">
-                            Room Size
-                            40.1 m2
-                            Capacity
-                            2 Guests
-                            Bed Type
-                            King Bed
-                            Bathroom
-                            Individual
-                            Room Details
-
+                    <div class="row"><img class="card-img-top " src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-M-1047x563.jpg"style="height: 300px;width: 800px" alt="Card image cap">
+                    </div>
+                    <div class=" row card-body">
+                        Room Size 40.1 m2 Capacity 2 Guests Bed Type King Bed Bathroom Individual Room Details
                     </div>
                 </div>
-
-
             </div>
         <footer class="py-5 bg-secondary text-light" >
             <div class="row">
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Furama Resort</h5>
                     <ul class="nav flex-column ">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
@@ -171,24 +175,22 @@
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Information With Furama</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Facebook</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Zalo</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Service</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Address</h5>
                     <ul class="nav flex-column ">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">090453454</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Furama@gmail.com.vn</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Facebook Furama</a></li>
+
                     </ul>
                 </div>
 
@@ -215,7 +217,7 @@
             </div>
         </footer>
 </div>
-</div>
+
 </body>
 
 <!-- JavaScript Bundle with Popper -->
