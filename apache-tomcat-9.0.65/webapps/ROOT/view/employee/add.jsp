@@ -189,6 +189,7 @@
         <input type="text" id="h" class="form-control" placeholder="customer_type">
     </div>
 
+<button type="submit" class="btn btn-primary">SAVE</button>
 
     <button type="submit" class="btn btn-primary ">
         <a style="color: cornsilk ; text-decoration: none" href="/view/employee/list.jsp">BACK</a>

@@ -165,7 +165,6 @@
         <button type="submit" class="btn btn-primary">Save</button>
         <button type="submit" class="btn btn-primary">
             <a href="/view/service/list_service.jsp" style="color: cornsilk ;text-decoration: none"> Back</a>
-
         </button>
 
     </form>

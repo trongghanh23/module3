@@ -82,7 +82,7 @@
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-con   trol-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
@@ -115,15 +115,15 @@
 
     </div>
 </div>
-<legend>Danh sách nhân viên</legend>
+<legend>Danh sách hợp đồng</legend>
     <div class="row main mt-2 ">
         <table class="table table-striped">
             <tr>
                 <th>STT</th>
-                <th>name</th>
-                <th>date_of_birth</th>
-                <th>id_card</th>
-                <th>phone</th>
+                <th>start_date</th>
+                <th>end_date</th>
+                <th>deposit</th>
+                <th>total_money</th>
                 <th>email</th>
                 <th>education degree</th>
                 <th>position</th>
@@ -154,7 +154,7 @@
 
                     </button>
                 <td>
-                    <button onclick="showInfoDelete('${id}','${name}')" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button onclick="showInfoDelete('${id}')" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         delete
                     </button>
 
@@ -171,7 +171,7 @@
                     </div>
                     <div class="modal-body">
                         <input type="text" name="deleteId" id="deleteId">
-                        <span>Bạn có muốn xóa  </span><span id="deleteName"></span>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -188,7 +188,7 @@
     <script>
         function showInfoDelete(id,name) {
             document.getElementById("deleteId").value= id;
-            document.getElementById("deleteName").innerText=name;
+
 
         }
     </script>

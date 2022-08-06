@@ -157,7 +157,7 @@
                     </button>
                 <td>
                 <td>
-                    <button onclick="showInfoDelete('${id}','${name}')" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button onclick="showInfoDelete('${id}')" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         delete
                     </button>
                 </td>
@@ -174,7 +174,7 @@
                     </div>
                     <div class="modal-body">
                         <input type="text" name="deleteId" id="deleteId">
-                        <span>Bạn có muốn xóa  </span><span id="deleteName"></span>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -185,9 +185,8 @@
         </div>
     </div>
     <script>
-        function showInfoDelete(id,name) {
+        function showInfoDelete(id) {
             document.getElementById("deleteId").value= id;
-            document.getElementById("deleteName").innerText=name;
 
         }
     </script>

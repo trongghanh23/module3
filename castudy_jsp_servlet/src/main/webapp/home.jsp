@@ -54,6 +54,7 @@
                     <ul class="dropdown-menu">
 
                         <li><a class="dropdown-item" href="/view/contract/list.jsp">Contract List</a></li>
+
                     </ul>
                 </li>
 
