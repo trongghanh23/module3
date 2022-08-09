@@ -54,7 +54,6 @@ public class UserRepository implements IUserRepository {
             throwables.printStackTrace();
         }
     }
-
     @Override
     public void update(User user) {
         Connection connection = BaseRepository.getConnectDB();

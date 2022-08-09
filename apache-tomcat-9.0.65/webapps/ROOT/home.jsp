@@ -35,7 +35,7 @@
                         Customer
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/view/customer/list.jsp">Customer List</a></li>
+                        <li><a class="dropdown-item" href="/Customer">Customer List</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
